@@ -1,5 +1,5 @@
 from fastapi import FastAPI
-from api.routers import router
+from .api.routers import router
 
 app = FastAPI(title="Order API")
 

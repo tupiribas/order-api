@@ -1,5 +1,5 @@
 from fastapi import APIRouter, status
-from models.schemas import OrderCreate
+from .models.schemas import OrderCreate
 
 router = APIRouter()
 
