@@ -1,0 +1,2 @@
+tests/test_condominio_schema.py
+-m slow
