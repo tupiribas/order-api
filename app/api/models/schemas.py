@@ -7,3 +7,8 @@ class OrderCreate(BaseModel):
     customer_name: str
     item_description: str
     price: float
+
+
+class CondominioCreate(BaseModel):
+    nome: str
+    endereco: str

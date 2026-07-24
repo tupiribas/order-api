@@ -10,3 +10,7 @@ Como o projeto visa colocar em prática minha leitura e conhecimento sobre a imp
 
 ## DER:
 ![Imagem do DER](img/DER.png)
+
+## Diagrama de Classes UML:
+Esse diagrama está representando todo o processo que deverá ser seguido (poderá conter alterações futuramente).
+![Imagem do Diagrama de classes](img/Diagrama_de_classes_UML.png)
