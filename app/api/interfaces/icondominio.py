@@ -7,3 +7,7 @@ class ICondominioRepository(ABC):
     @abstractmethod
     def salvar(self, dados: CondominioCreate) -> dict:
         pass
+
+    @abstractmethod
+    def buscar_por_id(self, id: int) -> dict:
+        pass

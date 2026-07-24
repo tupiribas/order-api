@@ -17,3 +17,11 @@ class CondominioRepositoryEmMemoria(ICondominioRepository):
         self._proximo_id += 1
         self.dados[novo_id] = novo_dado_condominio
         return novo_dado_condominio
+
+    def buscar_por_id(self, id: int) -> dict:
+        '''
+        Retorna o dado com base no id passado por parâmetro
+        '''
+        if id not in self.dados:
+            return {}
+        return self.dados[id]
