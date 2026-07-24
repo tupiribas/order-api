@@ -1,0 +1,17 @@
+# Base utilizada para o código: https://www.dio.me/articles/criando-um-ambiente-docker-para-desenvolvimento-em-python-38-cd043899ee32
+# Base utilizada para o código: https://www.linkedin.com/pulse/criando-containers-para-desenvolvimento-em-python-com-leandro-neckel/
+name: 'api-web'
+version: '3.8'
+
+services:
+  api-web:
+    build: .
+    container_name: python_app
+    ports:
+      - "8000:8000"
+    volumes:
+      - .:/usr/src/app
+    environment:
+      - PYTHONUNBUFFERED=1
+      - ENV=development
+    command: uvicorn app.main:app --reload --reload-delay 0.55 --host=0.0.0.0 --port=8000
