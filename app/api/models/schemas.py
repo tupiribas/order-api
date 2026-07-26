@@ -12,3 +12,8 @@ class OrderCreate(BaseModel):
 class CondominioCreate(BaseModel):
     nome: str
     endereco: str
+
+
+class ProdutoCreate(BaseModel):
+    nome: str
+    preco_base: float
