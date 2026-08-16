@@ -1,5 +1,7 @@
 tests/test_condominio_schema.py
 tests/test_produto_schema.py
+tests/test_pessoa_schema.py
 tests/test_produto_repository
+tests/test_pessoa_repository
 tests/test_condominio_repository
 -m slow

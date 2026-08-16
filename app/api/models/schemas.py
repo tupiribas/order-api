@@ -17,3 +17,7 @@ class CondominioCreate(BaseModel):
 class ProdutoCreate(BaseModel):
     nome: str
     preco_base: float
+
+
+class PessoaCreate(BaseModel):
+    nome: str
