@@ -1,0 +1,20 @@
+name: Testes
+on:
+  pull_request:
+    branches: [main]
+
+jobs:
+  testes:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4  # baixa seu código pra rodar os testes nele
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3'
+
+      - name: Instalar dependências
+        run: pip install --no-cache-dir -r requirements.txt
+
+      - name: Rodar testes
+        run: pytest
