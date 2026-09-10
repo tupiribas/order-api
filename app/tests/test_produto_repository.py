@@ -30,6 +30,7 @@ def test_should_save_produto_and_assign_id():
     # Validar se os dados foram devidamente slvos, validando pelo ids
     assert resultado1["id"] == 1
     assert resultado2["id"] == 2
+    assert resultado1["id"] == 999
 
 
 def test_should_find_by_id():
@@ -41,7 +42,7 @@ def test_should_find_by_id():
 
     # Act
     repo = ProdutoRepositoryEmMemoria()
-    prod1 = ProdutoCreate(**dados1)
+    prod1 = ProdutoCreate(**dados1)  # type: ignore
 
     _ = repo.salvar(prod1)
 
