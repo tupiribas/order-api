@@ -21,3 +21,9 @@ class ProdutoCreate(BaseModel):
 
 class PessoaCreate(BaseModel):
     nome: str
+
+
+class MoradorCreate(BaseModel):
+    condominio_id: int
+    pessoa_id: int
+    unidade: str
